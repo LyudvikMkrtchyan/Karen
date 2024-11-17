@@ -1,0 +1,133 @@
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Кнопки в верхней части страницы */
+#topButtons {
+    margin-bottom: 20px;
+}
+
+#topButtons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#topButtons button:hover {
+    background-color: #45a049;
+}
+
+/* Контекстное меню */
+#contextMenu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#contextMenu input {
+    padding: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#contextMenu select {
+    padding: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#searchButtons {
+    margin-top: 10px;
+}
+
+#searchButtons button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#searchButtons button:hover {
+    background-color: #45a049;
+}
+
+/* Кнопки для верхней панели */
+#showAllButton,
+#addNewProcessButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#showAllButton:hover,
+#addNewProcessButton:hover {
+    background-color: #45a049;
+}
+
+
+

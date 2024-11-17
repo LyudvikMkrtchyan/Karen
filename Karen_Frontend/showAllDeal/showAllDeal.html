@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hy"> <!-- Изменено на армянский язык -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ստուգել քաղաքացի</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Кнопки в верхней части страницы -->
+        <div id="topButtons">
+            <button id="showAllButton">Տեսնել բոլորին</button>
+            <button id="addNewProcessButton">Ավելացնել նոր գործ</button>
+        </div>
+
+        <h1>Քաղաքացիների ցուցակ</h1>
+        <table id="citizensTable">
+            <thead>
+                <tr>
+                    <th>Անուն</th>
+                    <th>Ազգանուն</th>
+                    <th>Հայրանուն</th>
+                    <th>Ծննդյան ամսաթիվ</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Данные будут загружены динамически -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="contextMenu" style="display: none;">
+        <input type="text" id="searchInput" placeholder="Փնտրել..." />
+        <select id="searchColumn">
+            <option value="name">Անուն</option>
+            <option value="surname">Ազգանուն</option>
+            <option value="fatherName">Հայրանուն</option>
+            <option value="birthDate">Ծննդյան ամսաթիվ</option>
+            <option value="id">ID</option>
+        </select>
+        <div id="searchButtons">
+            <button id="searchButton">Փնտրել</button>
+            <button id="cancelButton">Չեղարկել</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+

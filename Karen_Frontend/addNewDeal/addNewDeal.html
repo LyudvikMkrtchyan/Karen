@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+ 
+    <div class="top-section">
+        <div class="field-group">
+            <label for="country">Երկիրը</label>
+            <input type="text" id="country">
+        </div>
+        <div class="field-group">
+            <label for="name">Անուն</label>
+            <input type="text" id="name">
+        </div>
+        <div class="field-group">
+            <label for="surname">Ազգանուն</label>
+            <input type="text" id="surname">
+        </div>
+        <div class="field-group">
+            <label for="fatherName">Հայրանուն</label>
+            <input type="text" id="fatherName">
+        </div>
+        <div class="field-group">
+            <label for="birthDate">Ծննդյան Ամսաթիվ</label>
+            <input type="text" id="birthDate" placeholder="YYYY-MM-DD" pattern="\d{4}-\d{2}-\d{2}" title="Введите дату в формате YYYY-MM-DD">
+        </div>
+    </div>
+
+    <!-- Центральная часть с полями в двух колонках -->
+    <div class="middle-section">
+        <div class="row">
+            <label>Դեսպանությունից Ելք Ագն-1 </label>
+            <input type="text" id="embassyToMOFA-1">
+            <label>Ագն ֊ ից ելք Զինկոմ-1</label>
+            <input type="text" id="MOFAtoCommisariat-1">
+        </div>
+        <div class="row">
+            <label>Զինկոմից Ելք Ագն-1 </label>
+            <input type="text" id="commisariatToMOFA-1">
+            <label>Ագն ֊ ից ելք Դեսպանություն-1</label>
+            <input type="text" id="MOFAtoEmbassy-1">
+        </div>
+        <div class="row">
+            <label>Դեսպանությունից Ելք Ագն-2 </label>
+            <input type="text" id="embassyToMOFA-2">
+            <label>Ագն ֊ ից ելք Զինկոմ-2</label>
+            <input type="text" id="MOFAtoCommisariat-2">
+        </div>
+        <div class="row">
+            <label>Զինկոմից Ելք Ագն-2 </label>
+            <input type="text" id="commisariatToMOFA-2">
+            <label>Ագն ֊ ից ելք Դեսպանություն-2</label>
+            <input type="text" id="MOFAtoEmbassy-2">
+        </div>
+        <div class="row">
+            <label>Դեսպանությունից Ելք Ագն-3 </label>
+            <input type="text" id="embassyToMOFA-3" >
+            <label>Ագն ֊ ից ելք Զինկոմ-3</label>
+            <input type="text" id="MOFAtoCommisariat-3">
+        </div>
+        <div class="row">
+            <label>Զինկոմից Ելք Ագն-3 </label>
+            <input type="text" id="commisariatToMOFA-3">
+            <label>Ագն ֊ ից ելք Դեսպանություն-3</label>
+            <input type="text" id="MOFAtoEmbassy-3">
+        </div>
+    </div>
+
+    <!-- Большое поле для заметок справа -->
+    <div class="notes-section">
+        <label for="notes">Նշումներ</label>
+        <textarea id="notes"></textarea>
+    </div>
+
+    <!-- Кнопка сохранить -->
+    <div class="bottom-row">
+        <button onclick="saveData()">Պահպանել</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
